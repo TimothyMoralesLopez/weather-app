@@ -1,0 +1,19 @@
+body.snowy {
+  background-color: snow;
+}
+
+body.stormy {
+  background-color: yellow; 
+}
+
+body.rainy {
+  background-color: blue;
+}
+
+body.sunny {
+  background-color: orange;
+}
+
+body.cloudy {
+  background-color: gray; 
+}

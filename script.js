@@ -24,6 +24,7 @@ async function getWeatherAsync() {
   myDescData = weatherData.days[0].description; 
 
   updateDisplay(); 
+  updateBackground(); 
 }
 
 function updateArea() {
@@ -35,6 +36,28 @@ function updateDisplay() {
   areaDiv.textContent = `Weather for: ${myAreaData}`; 
   tempDiv.textContent = `Temperature (F): ${myTempData}`;
   descDiv.textContent = `Description: ${myDescData}`;
+}
+
+function updateBackground() {
+    if (myDescData.includes("Snow") || myDescData.includes("snow")) {
+        document.body.classList.add('snowy'); 
+    }
+
+    if (myDescData.includes("Lightning") || myDescData.includes("lightning")) {
+        document.body.classList.add('stormy');
+    }
+
+    if (myDescData.includes("Rain") || myDescData.includes("rain")) {
+        document.body.classList.add('rainy');
+    }
+
+    if (myDescData.includes("Sun") || myDescData.includes("sun")) {
+        document.body.classList.add('sunny');
+    }
+
+    if (myDescData.includes("Cloudy") || myDescData.includes("cloud")) {
+        document.body.classList.add('cloudy');
+    }
 }
 
 searchButton.addEventListener('click', (event) => { 
