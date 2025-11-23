@@ -1,1 +1,2 @@
 # weather-app
+This is my Weather App Project! In this project, I will be utilizing all that I've learned so far about APIs and promises and asynchronous functions. I am intimidated a little, but I am confident I can figure it out and get it completed in a timely fashion. 
